@@ -8,6 +8,8 @@
   </head>
   <body>
      <x-navbar/>
+
+     <x-header headerTitle={{$headerTitle}} />
     
     <div class="min-vh-100">
         {{$slot}}

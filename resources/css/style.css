@@ -1,0 +1,14 @@
+.headerCustom {
+    background: linear-gradient(rgba(99, 98, 98, 0.564), rgba(0, 0, 0, 0.488)),
+        url("/public/Image/anime.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+h1{
+    text-shadow: 1px 1px 25px white;
+    font-size: 150px;
+}
