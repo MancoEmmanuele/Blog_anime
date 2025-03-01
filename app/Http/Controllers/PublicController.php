@@ -12,4 +12,8 @@ class PublicController extends Controller
 
         return view('welcome', ['animes' => $animes['data']]);
     }
+
+    public function anime_detail($id){
+// 1.18.00
+    }
 }
