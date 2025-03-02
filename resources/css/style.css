@@ -12,3 +12,8 @@ h1{
     text-shadow: 1px 1px 25px white;
     font-size: 150px;
 }
+
+
+.img-custom{
+    height: 100vh;
+}

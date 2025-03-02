@@ -6,4 +6,4 @@
       <a href="{{route('anime_detail',['id'=> $id, 'anime_title' =>$title])}}" class="btn btn-primary">Vai al Dettaglio</a>
     </div>
   </div>
-  // 1.18.00
+  

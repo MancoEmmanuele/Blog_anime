@@ -14,5 +14,5 @@
             @endforeach
         </div>
     </section>
-    // 1.18.00
+    
 </x-layout>
