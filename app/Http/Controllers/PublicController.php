@@ -8,7 +8,7 @@ class PublicController extends Controller
     public function homepage()
     {
 
-        $animes = Http::get('https://api.jikan.moe/v4/anime')->json('data');
+        $animes = Http::get('https://api.jikan.moe/v4/anime')->json();
 
         return view('welcome', ['animes' => $animes['data']]);
     }
@@ -16,5 +16,8 @@ class PublicController extends Controller
     public function anime_detail($id){
         $anime = Http::get("https://api.jikan.moe/v4/anime/$id")->json('data');
         return view('anime_detail',["anime"=>$anime]);
+    }
+    public function anime_by_genres($id){
+
     }
 }

@@ -9,12 +9,17 @@
                 <p class="fs-4">Generi:</p>
                 <ul>
                     @foreach ($anime['genres'] as $genre)
-                        <li>{{ $genre['name'] }}</li>
+                        <a href="{{route('animes_by_genres',['id'=>$genre['mal_id'],'anime_genre'=>$genre['name']] )}}">
+                            <li>{{ $genre['name'] }}</li>
+                        </a>
                     @endforeach
                 </ul>
-                <p class="ls-4">Numero di episodi: {{$anime['episodes']}}</p>
+                <p class="ls-4">Numero di episodi: {{ $anime['episodes'] }}</p>
                 <p class="ls-4">Sinossi</p>
-                <p>{{$anime['synopsis']}}</p>
+                <p>{{ $anime['synopsis'] }}</p>
+
+                <a class="btn btn-primary" href="{{ route('homepage') }}">Torna alla Home</a>
+
             </div>
 
         </div>
